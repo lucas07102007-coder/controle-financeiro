@@ -1,0 +1,761 @@
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: white;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    background: #1f2937;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #9ca3af;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+
+/* ========================================
+   CAPITAL INICIAL
+======================================== */
+
+.capital {
+    background: #1f2937;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.capital h2 {
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#btnSalvarCapital {
+    background: #22c55e;
+    color: white;
+}
+
+
+/* ========================================
+   BACKUP DOS DADOS
+======================================== */
+
+.backup {
+    background: #1f2937;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.backup-acoes {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#btnExportarBackup {
+    background: #3b82f6;
+    color: white;
+}
+
+#btnImportarBackup {
+    background: #8b5cf6;
+    color: white;
+}
+
+
+/* ========================================
+   DASHBOARD
+======================================== */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: #1f2937;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #9ca3af;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   FILTRO POR PERÍODO
+======================================== */
+
+.filtro-periodo {
+    background: #1f2937;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.campo-periodo {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.campo-periodo label {
+    width: 100%;
+    font-size: 14px;
+    color: #d1d5db;
+}
+
+#filtroMes {
+    padding: 12px;
+    border: 1px solid #374151;
+    border-radius: 6px;
+    background: #111827;
+    color: white;
+    outline: none;
+}
+
+#filtroMes:focus {
+    border-color: #22c55e;
+}
+
+#btnMesAtual {
+    background: #22c55e;
+    color: white;
+}
+
+#btnTodos {
+    background: #374151;
+    color: white;
+}
+
+
+/* ========================================
+   TÍTULOS DAS SEÇÕES
+======================================== */
+
+.titulo-secao {
+    margin-bottom: 20px;
+}
+
+.titulo-secao p {
+    color: #9ca3af;
+    margin-top: 5px;
+}
+
+
+/* ========================================
+   RESUMO MENSAL
+======================================== */
+
+.resumo-mensal {
+    background: #1f2937;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.resumo-conteudo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.resumo-item {
+    background: #111827;
+    padding: 18px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.resumo-item span {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.resumo-item strong {
+    color: white;
+    font-size: 20px;
+}
+
+.resultado-final {
+    border: 1px solid #22c55e;
+}
+
+.resultado-final strong {
+    color: #22c55e;
+}
+
+
+/* ========================================
+   GRÁFICO FINANCEIRO
+======================================== */
+
+.grafico-financeiro {
+    background: #1f2937;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.grafico-container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+}
+
+
+/* ========================================
+   GRÁFICO DE GASTOS POR CATEGORIA
+======================================== */
+
+.grafico-categorias {
+    background: #1f2937;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.grafico-categoria-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    margin: 20px auto 0;
+}
+
+
+/* ========================================
+   NOVO LANÇAMENTO
+======================================== */
+
+.lancamentos {
+    background: #1f2937;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+#formLancamento {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    align-items: end;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.campo label {
+    font-size: 14px;
+    color: #d1d5db;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #374151;
+    border-radius: 6px;
+    background: #111827;
+    color: white;
+    outline: none;
+}
+
+.campo input:focus,
+.campo select:focus {
+    border-color: #22c55e;
+}
+
+#btnAdicionar {
+    background: #22c55e;
+    color: white;
+    height: 42px;
+}
+
+
+/* ========================================
+   HISTÓRICO DE LANÇAMENTOS
+======================================== */
+
+.historico {
+    background: #1f2937;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #111827;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #374151;
+}
+
+th {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+td {
+    color: #f3f4f6;
+}
+
+
+/* ========================================
+   ENTRADAS
+======================================== */
+
+.tipo-entrada {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.valor-entrada {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   SAÍDAS
+======================================== */
+
+.tipo-saida {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+.valor-saida {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   BOTÃO EDITAR
+======================================== */
+
+.btn-editar {
+    background: #f59e0b;
+    color: white;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+
+/* ========================================
+   BOTÃO EXCLUIR
+======================================== */
+
+.btn-excluir {
+    background: #ef4444;
+    color: white;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .resumo-conteudo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #formLancamento {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    #formLancamento {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    main {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    header {
+        padding: 25px 15px;
+    }
+
+    .campo-periodo {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #filtroMes,
+    #btnMesAtual,
+    #btnTodos {
+        width: 100%;
+    }
+
+    .backup-acoes {
+        flex-direction: column;
+    }
+
+    #btnExportarBackup,
+    #btnImportarBackup {
+        width: 100%;
+    }
+
+    .resumo-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .grafico-container {
+        height: 300px;
+    }
+
+    .grafico-categoria-container {
+        height: 300px;
+    }
+
+    .capital,
+    .backup,
+    .filtro-periodo,
+    .resumo-mensal,
+    .grafico-financeiro,
+    .grafico-categorias,
+    .lancamentos,
+    .historico {
+        padding: 20px;
+    }
+
+    .capital input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #btnSalvarCapital {
+        width: 100%;
+    }
+}
+
+/* ========================================
+   AÇÕES DO LANÇAMENTO
+======================================== */
+
+.acoes-lancamento {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.acoes-lancamento #btnAdicionar {
+    flex: 1;
+}
+
+.btn-cancelar-edicao {
+    background: #6b7280;
+    color: white;
+    height: 42px;
+    transition: 0.2s;
+}
+
+.btn-cancelar-edicao:hover {
+    background: #4b5563;
+}
+
+.btn-cancelar-edicao[hidden] {
+    display: none;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .acoes-lancamento {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .acoes-lancamento #btnAdicionar,
+    .btn-cancelar-edicao {
+        width: 100%;
+    }
+}
+
+/* ========================================
+   TELA DE RELATÓRIOS MENSAIS
+======================================== */
+
+.tela-relatorios {
+    width: 100%;
+}
+
+.tela-relatorios[hidden] {
+    display: none;
+}
+
+
+/* CABEÇALHO DOS RELATÓRIOS */
+
+.cabecalho-relatorios {
+    background: #1f2937;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cabecalho-relatorios h2 {
+    margin-bottom: 5px;
+}
+
+.cabecalho-relatorios p {
+    color: #9ca3af;
+}
+
+
+/* BOTÕES DE VOLTAR */
+
+#btnVoltarSistema,
+#btnVoltarMeses {
+    background: #374151;
+    color: white;
+    white-space: nowrap;
+}
+
+#btnVoltarSistema:hover,
+#btnVoltarMeses:hover {
+    background: #4b5563;
+}
+
+
+/* ========================================
+   SELETOR DE ANO
+======================================== */
+
+.seletor-ano-relatorios {
+    background: #1f2937;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.seletor-ano-relatorios label {
+    color: #d1d5db;
+    font-weight: bold;
+}
+
+#anoRelatorios {
+    padding: 12px 15px;
+    border: 1px solid #374151;
+    border-radius: 6px;
+
+    background: #111827;
+    color: white;
+
+    outline: none;
+    cursor: pointer;
+}
+
+#anoRelatorios:focus {
+    border-color: #22c55e;
+}
+
+
+/* ========================================
+   GRADE DOS 12 MESES
+======================================== */
+
+.grade-meses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.btn-mes {
+    min-height: 110px;
+
+    background: #1f2937;
+    color: white;
+
+    border: 1px solid #374151;
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    transition: 0.2s;
+}
+
+.btn-mes:hover {
+    background: #273449;
+    border-color: #22c55e;
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   RELATÓRIO DO MÊS SELECIONADO
+======================================== */
+
+.dashboard-relatorio {
+    margin-bottom: 25px;
+}
+
+.relatorio-movimentacoes {
+    margin-bottom: 25px;
+}
+
+
+/* ENTRADAS DO RELATÓRIO */
+
+#relatorioListaEntradas td:last-child {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+
+/* SAÍDAS DO RELATÓRIO */
+
+#relatorioListaSaidas td:last-child {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE DOS RELATÓRIOS
+======================================== */
+
+@media (max-width: 900px) {
+
+    .grade-meses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .cabecalho-relatorios {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+    }
+
+    #btnVoltarSistema,
+    #btnVoltarMeses {
+        width: 100%;
+    }
+
+    .seletor-ano-relatorios {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #anoRelatorios {
+        width: 100%;
+    }
+
+    .grade-meses {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-mes {
+        min-height: 80px;
+    }
+}
