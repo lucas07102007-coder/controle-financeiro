@@ -160,11 +160,11 @@ const btnAdicionar =
 // ========================================
 
 const categoriasEntrada = [
-    "Salário",
     "Gain"
 ];
 
 const categoriasSaida = [
+    "Salário",
     "Loss"
 ];
 
