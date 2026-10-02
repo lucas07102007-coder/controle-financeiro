@@ -1421,9 +1421,8 @@ function atualizarDashboard() {
     // ========================================
 
     const lucroLiquido =
-        totalEntradas -
-        totalSaidas -
-        capitalInicial;
+    totalEntradas -
+    totalSaidas;
 
 
     // ========================================

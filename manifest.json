@@ -2,7 +2,7 @@
     "name": "Controle Financeiro",
     "short_name": "Financeiro",
     "description": "Sistema de controle financeiro para gerenciamento de entradas, saídas, ganhos e perdas.",
-    "start_url": "./inicio.html",
+    "start_url": "./index.html",
     "scope": "./",
     "display": "standalone",
     "background_color": "#111827",
